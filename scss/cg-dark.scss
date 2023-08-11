@@ -106,12 +106,14 @@ h2 {
   color: $primary;
 }
 
-// Blockquote
+.title {
+  display: none;
+}
 
 // Sections
 #intro {
   blockquote {
-    border-left: 1rem solid $primary;
+    border-left: 0.5rem solid $primary;
     background: $light-faded;
 
     h1 {
