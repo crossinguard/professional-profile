@@ -1,0 +1,161 @@
+/*-- scss:defaults --*/
+
+// Color
+$primary: #ee6c4d !default;
+$primary-faded: rgba($primary, 0.05) !default;
+$primary-light: lighten($primary, 20%) !default;
+$primary-dark: darken($primary, 20%) !default;
+$primary-darkest: darken($primary, 30%) !default;
+
+$secondary: #17a398 !default;
+$secondary-faded: rgba($secondary, 0.05) !default;
+$secondary-light: lighten($secondary, 20%) !default;
+$secondary-dark: darken($secondary, 20%) !default;
+$secondary-darkest: darken($secondary, 30%) !default;
+
+$light: #f4f4f4 !default;
+$light-faded: rgba($light, 0.05) !default;
+
+$dark: #222222 !default;
+$dark-faded: rgba($dark, 0.05) !default;
+
+// Font
+$web-font-path: "https://fonts.googleapis.com/css2?family=Fira+Code&family=Fira+Sans:wght@100;400;700&display=swap" !default;
+@if $web-font-path {
+  @import url($web-font-path);
+}
+
+$font-family-sans-serif: "Fira Sans", sans-serif;
+$font-family-monospace: "Fira Code", monospace;
+
+/*-- scss:rules --*/
+
+// General
+body {
+  background: $dark;
+  color: $light;
+
+  p {
+    font-weight: 100;
+
+    a {
+      font-family: $font-family-monospace;
+    }
+  }
+
+  a {
+    color: $primary-light;
+    font-weight: 400;
+    text-decoration: none;
+
+    &:hover {
+      color: $primary;
+    }
+  }
+
+  i {
+    color: $secondary;
+  }
+
+  li {
+    list-style-type: none;
+    padding-bottom: 0.5rem;
+
+    code {
+      font-family: $font-family-sans-serif;
+      color: $light;
+      background: $light-faded !important;
+    }
+
+    em {
+      font-weight: 100;
+    }
+  }
+}
+
+// Navbar
+.navbar-title {
+  font-family: $font-family-monospace;
+  font-weight: 700;
+  color: $light;
+}
+
+.menu-text {
+  color: $light;
+}
+
+.navbar {
+  background: $primary !important;
+}
+
+// Headers
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $font-family-monospace;
+}
+
+h1 {
+  color: $secondary;
+}
+
+h2 {
+  color: $primary;
+}
+
+// Blockquote
+
+// Sections
+#intro {
+  blockquote {
+    border-left: 1rem solid $primary;
+    background: $light-faded;
+
+    h1 {
+      color: $light;
+      font-size: 3rem;
+    }
+
+    p {
+      font-weight: 400;
+    }
+  }
+}
+
+#formal-training {
+  blockquote {
+    border-left: 1px solid $secondary;
+    margin-left: 1rem;
+
+    ul {
+      margin-left: -1rem;
+    }
+
+    em {
+      color: $light;
+    }
+  }
+}
+
+// Footer
+.nav-footer {
+  background: $secondary-dark;
+  // color: $dark;
+
+  a {
+    color: $primary-light;
+    font-weight: 700;
+    text-decoration: none;
+
+    &:hover {
+      color: $primary;
+    }
+  }
+
+  i {
+    color: $primary-light;
+  }
+}
