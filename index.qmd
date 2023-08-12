@@ -54,7 +54,7 @@ Define & document processes to increase consistency while improving workflows fo
 
 Acquire & convey complex information effectively to stakeholders of diverse technical and knowledge backgrounds. 
 
-## formal training
+<!-- ## formal training
 
 ### <i class="bi bi-mortarboard-fill"></i> degree
 
@@ -81,13 +81,13 @@ Acquire & convey complex information effectively to stakeholders of diverse tech
 > - `CompTIA Network+`
 >   - *CompTIA, 2021*
 > - `CompTIA Project+`
->   - *CompTIA, 2019*
+>   - *CompTIA, 2019* -->
 
 ## curriculum vitae
 
-<i class="bi bi-filetype-html"></i> [view online](#){target="_blank"}
+<i class="bi bi-filetype-html"></i> [view online](https://crossinguard.github.io/cv/){target="_blank"}
 
-<i class="bi bi-filetype-pdf"></i> [download file](#){target="_blank"}
+<i class="bi bi-filetype-pdf"></i> [download file](resources\egbert-resume.pdf){target="_blank"}
 
 ## portfolio
 
