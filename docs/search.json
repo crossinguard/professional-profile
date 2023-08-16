@@ -32,6 +32,6 @@
     "href": "index.html#portfolio",
     "title": "Egbert | professional profile",
     "section": "portfolio",
-    "text": "portfolio\ncoming soon"
+    "text": "portfolio\n\nNetflix Content Analysis\n\n\n\n\n\n\n\n\nPreparation of Netflix data for use in a Tableau dashboard. VS Code was used to create a .qmd Quarto document, which employs markdown and code blocks similar to a Jupyter notebook. Quarto uses pandoc to convert the .qmd document into an HTML file, which in turn can be customized visually using CSS and Bootstrap variables. The end result is a human-readable source document that is highly adaptable and cabable of displaying complex information.   project website github repo\n\n\n\nPortfolio under construction, more projects added soon!"
   }
 ]

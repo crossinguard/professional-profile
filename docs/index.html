@@ -105,7 +105,10 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#transfer-of-knowledge" id="toc-transfer-of-knowledge" class="nav-link" data-scroll-target="#transfer-of-knowledge"><i class="bi bi-share-fill"></i> transfer of knowledge</a></li>
   </ul></li>
   <li><a href="#curriculum-vitae" id="toc-curriculum-vitae" class="nav-link" data-scroll-target="#curriculum-vitae">curriculum vitae</a></li>
-  <li><a href="#portfolio" id="toc-portfolio" class="nav-link" data-scroll-target="#portfolio">portfolio</a></li>
+  <li><a href="#portfolio" id="toc-portfolio" class="nav-link" data-scroll-target="#portfolio">portfolio</a>
+  <ul class="collapse">
+  <li><a href="#netflix-content-analysis" id="toc-netflix-content-analysis" class="nav-link" data-scroll-target="#netflix-content-analysis">Netflix Content Analysis</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -134,10 +137,10 @@ ul.task-list li input[type="checkbox"] {
 <h1 id="w.-brett-egbert">W. Brett Egbert</h1>
 <p>business analyst, assessment developer, mathematics educator</p>
 <hr>
-<p><a href="mailto:w.brett.egbert@gmail.com" target="_blank"><i class="bi bi-envelope-fill"></i> email</a></p>
-<p><a href="https://www.linkedin.com/in/w-brett-egbert/" target="_blank"><i class="bi bi-linkedin"></i> linkedin</a></p>
-<p><a href="https://www.credly.com/users/brett-egbert" target="_blank"><i class="bi bi-patch-check-fill"></i> credly</a></p>
-<p><a href="https://github.com/crossinguard" target="_blank"><i class="bi bi-github"></i> github</a></p>
+<p><a href="mailto:w.brett.egbert@gmail.com"><i class="bi bi-envelope-fill"></i> email</a></p>
+<p><a href="https://www.linkedin.com/in/w-brett-egbert/"><i class="bi bi-linkedin"></i> linkedin</a></p>
+<p><a href="https://www.credly.com/users/brett-egbert"><i class="bi bi-patch-check-fill"></i> credly</a></p>
+<p><a href="https://github.com/crossinguard"><i class="bi bi-github"></i> github</a></p>
 </blockquote>
 </div>
 <section id="about-me" class="level2">
@@ -202,14 +205,29 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="curriculum-vitae" class="level2">
 <h2 data-anchor-id="curriculum-vitae">curriculum vitae</h2>
-<p><i class="bi bi-filetype-html"></i> <a href="https://crossinguard.github.io/cv/" target="_blank">view online</a></p>
-<p><i class="bi bi-filetype-pdf"></i> <a href="resources\egbert-resume.pdf" target="_blank">download file</a></p>
+<p><i class="bi bi-filetype-html"></i> <a href="https://crossinguard.github.io/cv/">view online</a></p>
+<p><i class="bi bi-filetype-pdf"></i> <a href="resources\egbert-resume.pdf">download file</a></p>
 </section>
 <section id="portfolio" class="level2">
 <h2 data-anchor-id="portfolio">portfolio</h2>
-<p><em>coming soon</em></p>
+<section id="netflix-content-analysis" class="level3">
+<h3 data-anchor-id="netflix-content-analysis">Netflix Content Analysis</h3>
+<div class="quarto-layout-panel">
+<div class="quarto-layout-row quarto-layout-valign-top">
+<div class="quarto-figure quarto-figure-center" style="flex-basis: 50.0%;justify-content: center;">
+<figure class="figure">
+<p><a href="https://crossinguard.github.io/netflix-content-analysis/"><img src="resources\portfolio_netflix-content-analysis.png" class="img-fluid figure-img" alt="A screenshot of a data coding notebook."></a></p>
+</figure>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<p>Preparation of Netflix data for use in a Tableau dashboard. VS Code was used to create a <code>.qmd</code> Quarto document, which employs markdown and code blocks similar to a <a href="https://jupyter.org/">Jupyter notebook</a>. Quarto uses <a href="https://pandoc.org/">pandoc</a> to convert the <code>.qmd</code> document into an HTML file, which in turn can be customized visually using CSS and Bootstrap variables. The end result is a human-readable source document that is highly adaptable and cabable of displaying complex information. <br><br> <a href="https://crossinguard.github.io/netflix-content-analysis/"><i class="bi bi-globe2"></i> project website</a><br><a href="https://github.com/crossinguard/netflix-content-analysis"><i class="bi bi-github"></i> github repo</a></p>
+</div>
+</div>
+</div>
+<p><em>Portfolio under construction, more projects added soon!</em></p>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->
@@ -437,6 +455,22 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       });
     }
   }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+          // target, if specified
+          link.setAttribute("target", "_blank");
+          // default icon
+          link.classList.add("external");
+      }
+    }
 });
 </script>
 </div> <!-- /content -->

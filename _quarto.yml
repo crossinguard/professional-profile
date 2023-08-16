@@ -25,4 +25,7 @@ website:
 format:
   html:
     theme: scss\cg-dark.scss
+    link-external-icon: true
+    link-external-newwindow: true
     anchor-sections: false
+    reference-location: margin
