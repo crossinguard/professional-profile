@@ -2,13 +2,13 @@
 
 // Color
 $primary: #ee6c4d !default;
-$primary-faded: rgba($primary, 0.05) !default;
+$primary-faded: rgba($primary, 0.1) !default;
 $primary-light: lighten($primary, 20%) !default;
 $primary-dark: darken($primary, 20%) !default;
 $primary-darkest: darken($primary, 30%) !default;
 
 $secondary: #17a398 !default;
-$secondary-faded: rgba($secondary, 0.05) !default;
+$secondary-faded: rgba($secondary, 0.1) !default;
 $secondary-light: lighten($secondary, 20%) !default;
 $secondary-dark: darken($secondary, 20%) !default;
 $secondary-darkest: darken($secondary, 30%) !default;
@@ -17,6 +17,7 @@ $light: #f4f4f4 !default;
 $light-faded: rgba($light, 0.05) !default;
 
 $dark: #222222 !default;
+$darkish: #333333 !default;
 $dark-faded: rgba($dark, 0.05) !default;
 
 // Font
@@ -104,26 +105,92 @@ h1 {
 
 h2 {
   color: $primary;
+  // text-align: center;
 }
+
+h3 {
+  text-align: center;
+  padding-bottom: 1rem;
+}
+
+// Icons
+
+i {
+  :hover {
+    color: $primary;
+  }
+}
+
+code {
+  background: $darkish !important;
+  color: $secondary-light !important;
+}
+
+// Classes
 
 .title {
   display: none;
 }
 
+// .figure:hover {
+//   transform: scale(1.05);
+//   transition: all 0.5s ease-in-out;
+//   opacity: 0.8;
+// }
+
 // Sections
+#TOC {
+  border-left: 1px solid $secondary-faded;
+
+  a {
+    border-left: none;
+  }
+}
+
 #intro {
-  blockquote {
-    border-left: 0.5rem solid $primary;
-    background: $light-faded;
+  border-left: 0.5rem solid $primary;
+  border-bottom: 0.5rem solid $secondary-faded;
+  background: $light-faded;
+  padding-left: 1rem;
+  padding-top: 1rem;
 
-    h1 {
-      color: $light;
-      font-size: 3rem;
+  hr {
+    width: 90%;
+    margin: auto;
+  }
+
+  #social {
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    font-size: 2rem;
+    text-align: center;
+    justify-content: center;
+
+    i {
+      color: $secondary;
+
+      &:hover {
+        color: $primary;
+      }
     }
+  }
 
+  #roles {
     p {
+      color: #53616d;
       font-weight: 400;
+      width: 90%;
     }
+  }
+
+  strong {
+    font-family: $font-family-monospace;
+    font-size: 3rem;
+    font-weight: 700;
+  }
+
+  p {
+    text-align: center;
   }
 }
 
@@ -140,6 +207,18 @@ h2 {
       color: $light;
     }
   }
+}
+
+#curriculum-vitae {
+  i {
+    color: $primary-light;
+  }
+}
+
+#coming-soon {
+  text-align: center;
+  padding-top: 2rem;
+  font-size: 1.5rem;
 }
 
 #toc-title {
@@ -164,5 +243,10 @@ h2 {
 
   i {
     color: $primary-light;
+    font-size: 1rem;
+
+    &:hover {
+      color: $primary;
+    }
   }
 }
