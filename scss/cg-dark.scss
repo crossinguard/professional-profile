@@ -138,6 +138,10 @@ code {
 //   opacity: 0.8;
 // }
 
+.column-container {
+  color: $primary-light;
+}
+
 // Sections
 #TOC {
   border-left: 1px solid $secondary-faded;
@@ -194,17 +198,43 @@ code {
   }
 }
 
-#formal-training {
-  blockquote {
-    border-left: 1px solid $secondary;
-    margin-left: 1rem;
+.skills-cards {
+  width: 75%;
+  margin: auto;
 
-    ul {
-      margin-left: -1rem;
+  .level3 {
+    background-color: $secondary-faded;
+    margin-bottom: 1rem;
+    border-radius: 0.5rem;
+    padding: 0.5rem 1rem;
+    border-left: 0.5rem solid $primary-darkest;
+    border-right: 0.5rem solid $secondary-dark;
+
+    &:nth-child(even) {
+      background-color: $secondary-darkest;
     }
 
-    em {
-      color: $light;
+    h3 {
+      font-weight: 700;
+    }
+
+    i {
+      font-size: 2.5rem;
+    }
+
+    p {
+      text-align: center;
+    }
+
+    &:hover {
+      transform: scale(1.05);
+      transition: all 0.5s ease-in-out;
+      opacity: 0.8;
+
+      h3 {
+        color: $primary-light;
+        transition: all 0.5s ease-in-out;
+      }
     }
   }
 }
@@ -212,6 +242,26 @@ code {
 #curriculum-vitae {
   i {
     color: $primary-light;
+  }
+
+  .cv-cards {
+    justify-content: center;
+
+    p {
+      padding: 2rem;
+    }
+  }
+}
+
+.portfolio-cards {
+  img:hover {
+    transform: scale(1.05);
+    transition: all 0.5s ease-in-out;
+    opacity: 0.8;
+  }
+
+  section {
+    flex: 1;
   }
 }
 
@@ -248,5 +298,12 @@ code {
     &:hover {
       color: $primary;
     }
+  }
+}
+
+// Media Queries
+@media (max-width: 768px) {
+  .mycards {
+    flex-direction: column;
   }
 }

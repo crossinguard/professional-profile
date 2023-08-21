@@ -18,20 +18,20 @@
     "href": "index.html#skills",
     "title": "Egbert | professional profile",
     "section": "skills",
-    "text": "skills\n\nanalytics\nCompile & generate insights from data to drive business decisions through ad-hoc reports and business intelligence executive dashboards.\n\n\nprocess mapping\nDefine & document processes to increase consistency while improving workflows for atypical pathways.\n\n\ntransfer of knowledge\nAcquire & convey complex information effectively to stakeholders of diverse technical and knowledge backgrounds."
+    "text": "skills\n\n\nanalytics\nCompile & generate insights from data to drive business decisions through ad-hoc reports and business intelligence executive dashboards.\n\n\nprocess mapping\nDefine & document processes to increase consistency while improving workflows for atypical pathways.\n\n\ntransfer of knowledge\nAcquire & convey complex information effectively to stakeholders of diverse technical and knowledge backgrounds."
   },
   {
     "objectID": "index.html#curriculum-vitae",
     "href": "index.html#curriculum-vitae",
     "title": "Egbert | professional profile",
     "section": "curriculum vitae",
-    "text": "curriculum vitae\n view online\n download file"
+    "text": "curriculum vitae\nView my curriculum vitae (i.e., cv, resume) by selecting one of the options below.11 recommend view online\n\n view online\n download file"
   },
   {
     "objectID": "index.html#portfolio",
     "href": "index.html#portfolio",
     "title": "Egbert | professional profile",
     "section": "portfolio",
-    "text": "portfolio\n\nNetflix Content Analysis\n\n Quarto R//tidyverse Markdown CSS Sass Bootstrap\nPreparation of Netflix data for use in a Tableau dashboard. VS Code was used to create a Quarto technical document, which employs markdown and code blocks similar to a Jupyter coding notebook. Pandoc was used to render the markdown-based document into an HTML file. Custom styling occurred using Sass with CSS and Bootstrap. The end result is a human-readable source document that is highly adaptable and cabable of displaying complex information.  project website  github repo\n\n\nAccompanying Tableau dashboard coming soon!\n\n\n\nRecipe Book\n\nDigital recipe book for personal use. VS Code was used to create a Quarto technical document, which employs markdown and code blocks similar to a Jupyter coding notebook. Pandoc was used to render the markdown-based document into an HTML file. Custom styling occurred using Sass with CSS and Bootstrap. The end result is a human-readable source document that is highly adaptable and cabable of displaying complex information.  project website  github repo\n Quarto Markdown CSS Sass Bootstrap\n\n\nPortfolio under construction, more projects coming soon!"
+    "text": "portfolio\n\nNetflix Content Analysis\n\n\nData Preparation\n\n\n\n\n\nQuarto R//tidyverse Markdown CSS Sass Bootstrap\nWHAT?\nPreparation of Netflix data for use in a Tableau dashboard. A csv file of data was imported as a dataframe/tibble using R and the tidyverse collection of data science packages. Data quality issues regarding columns with multi-value elements, column datatypes, date formats, misplaced values, and column splitting were addressed during this process. The resulting clean data was exported for use in a Tableau dashboard for further analysis.\nHOW?\nVS Code was used to create a Quarto technical document, which employs markdown and code blocks similar to a Jupyter coding notebook. Pandoc was used to render the markdown-based document into an HTML file. Custom styling occurred using Sass with CSS and Bootstrap. The end result is a human-readable source document that is highly adaptable and cabable of displaying complex information.\n\n project website\n github repo\n\n\n\nData Dashboard\nAccompanying Tableau dashboard coming soon!\n\nTableau csv datasource\n\n\n\n\n\n\nRecipe Book\n\nDigital recipe book for personal use. VS Code was used to create a Quarto technical document, which employs markdown and code blocks similar to a Jupyter coding notebook. Pandoc was used to render the markdown-based document into an HTML file. Custom styling occurred using Sass with CSS and Bootstrap. The end result is a human-readable source document that is highly adaptable and cabable of displaying complex information.  project website  github repo\n Quarto Markdown CSS Sass Bootstrap\n\n\nPortfolio under construction, more projects coming soon!"
   }
 ]
