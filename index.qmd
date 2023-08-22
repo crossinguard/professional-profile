@@ -52,27 +52,42 @@ Unfortunately, a 2023 reduction in staff led to layoffs for the majority of my t
 
 ## skills
 
-::: {.skills-cards .mycards}
+::: {#analytics-card .skills-cards}
 
 ### <i class="bi bi-clipboard-data-fill"></i></br>analytics
 
 Compile & generate insights from data to drive business decisions through ad-hoc reports and business intelligence executive dashboards. 
 
+<span class="badge bg-warning">analytics</span>
+
+:::
+
+::: {#process-mapping-card .skills-cards}
+
 ### <i class="bi bi-signpost-2-fill"></i></br>process mapping
 
-Define & document processes to increase consistency while improving workflows for atypical pathways. 
+Define & document processes to increase consistency while improving workflows for atypical pathways.
+
+<span class="badge bg-info">process mapping</span>
+
+:::
+
+::: {#transfer-of-knowledge-card .skills-cards}
 
 ### <i class="bi bi-share-fill"></i></br>transfer of knowledge
 
 Acquire & convey complex information effectively to stakeholders of diverse technical and knowledge backgrounds. 
 
+<span class="badge bg-success">transfer of knowledge</span>
+
 :::
+
 
 ## curriculum vitae
 
-View my curriculum vitae (i.e., cv, resume) by selecting one of the options below.^[**recommend** view online]
+View my curriculum vitae (i.e., cv, resume) by selecting one of the options below.
 
-::: {.cv-cards .d-flex .mycards}
+::: {.cv-cards .d-flex}
 
 [[<i class="bi bi-filetype-html"></i> view online]{.btn .btn-outline-secondary}](https://crossinguard.github.io/cv/)
 
@@ -82,68 +97,85 @@ View my curriculum vitae (i.e., cv, resume) by selecting one of the options belo
 
 ## portfolio
 
+::::: {#netflix-card .portfolio-cards}
+
+::: {.portfolio-header}
+
 ### Netflix Content Analysis
 
-::: {#netflix-card .portfolio-cards .d-flex .gap-3 .mycards}
+- [<i class="bi bi-globe2"></i> project website](https://crossinguard.github.io/netflix-content-analysis/)
+- [<i class="bi bi-github"></i> github repo](https://github.com/crossinguard/netflix-content-analysis)
 
-#### Data Preparation
+:::
 
-[![](resources\portfolio_netflix-content-analysis.png){fig-alt="A screenshot of a data coding notebook."}](https://crossinguard.github.io/netflix-content-analysis/)
+::: {.portfolio-badges}
 
+<span class="badge bg-warning">analytics</span>
+<span class="badge bg-info">process mapping</span>
+<span class="badge bg-success">transfer of knowledge</span>
 <span class="badge bg-secondary">Quarto</span>
 <span class="badge bg-secondary">R//tidyverse</span>
 <span class="badge bg-secondary">Markdown</span>
 <span class="badge bg-secondary">CSS</span>
 <span class="badge bg-secondary">Sass</span>
 <span class="badge bg-secondary">Bootstrap</span>
-
-**WHAT?**
-
-Preparation of Netflix data for use in a Tableau dashboard. A `csv` file of data was imported as a dataframe/tibble using [R](https://www.r-project.org/) and the [tidyverse](https://www.tidyverse.org/) collection of data science packages. Data quality issues regarding columns with multi-value elements, column datatypes, date formats, misplaced values, and column splitting were addressed during this process. The resulting clean data was exported for use in a Tableau dashboard for further analysis.
-
-**HOW?**
-
-[VS Code](https://code.visualstudio.com/) was used to create a [Quarto](https://quarto.org/) technical document, which employs markdown and code blocks similar to a [Jupyter](https://jupyter.org/) coding notebook. [Pandoc](https://pandoc.org/) was used to render the markdown-based document into an HTML file. Custom styling occurred using [Sass](https://sass-lang.com/) with CSS and [Bootstrap](https://getbootstrap.com/). The end result is a human-readable source document that is highly adaptable and cabable of displaying complex information.
-
-- [<i class="bi bi-globe2"></i> project website](https://crossinguard.github.io/netflix-content-analysis/)
-- [<i class="bi bi-github"></i> github repo](https://github.com/crossinguard/netflix-content-analysis)
-
-#### Data Dashboard
-
-*Accompanying Tableau dashboard coming soon!*
-
-<!-- [![](resources\portfolio_netflix-content-analysis.png){fig-alt="A screenshot of a data coding notebook."}](https://crossinguard.github.io/netflix-content-analysis/) -->
 <span class="badge bg-secondary">Tableau</span>
 <span class="badge bg-secondary">csv datasource</span>
 
-<!-- **WHAT?**
-
-[Tableau Public](https://public.tableau.com/) dashboard for exploring and analyzing Netflix data. Multiple clean `csv` files were exported during *Data Preparation* for use as datasources. The following are sample business questions that could be examined using this dashboard.
-
-1. How does the average duration of movies and TV shows on Netflix compare by release year?
-2. Are there certain months when more content is added to Netflix? Does that differ between content types?
-3. How does the distribution of content types differ based on ratings (e.g., PG, PG-13, R)? -->
-
-
 :::
+
+*Accompanying Tableau dashboard coming soon!*
+
+#### About
+
+Preparation of Netflix data for use in a Tableau dashboard. Data quality issues regarding columns with multi-value elements, incorrect datatypes & date formats, misplaced values, and column splitting were addressed during this process. 
+
+The resulting clean data was exported to use in a Tableau dashboard for further analysis. The following are sample business questions that could be examined using this dashboard.
+
+1. *How has the average duration of movies and TV shows on Netflix evolved each decade (by release year)?*
+2. *Are there certain months when more content is added to Netflix? Does that differ between content types?*
+3. *What is the distribution of content by ratings (e.g., PG, PG-13, R)? Does that vary by country of origin?*
+
+#### Tools
+
+A [Quarto](https://quarto.org/) `.qmd` technical document, which employs markdown and functional code blocks similar to a [Jupyter](https://jupyter.org/) coding notebook, was created within [VS Code](https://code.visualstudio.com/). A `csv` file of data was imported as a dataframe/tibble using [R](https://www.r-project.org/) and the [tidyverse](https://www.tidyverse.org/) collection of data science packages.
+
+At the conclusion of the data preparation process, multiple clean `csv` files were exported for use as datasources in a [Tableau Public](https://public.tableau.com/) dashboard. [Pandoc](https://pandoc.org/) was then used to convert the markdown-based `.qmd` document into an HTML file, with custom styling occurring through [Sass](https://sass-lang.com/) with CSS and [Bootstrap](https://getbootstrap.com/). The end result is a human-readable source document that is highly adaptable and cabable of displaying complex information. 
+
+:::::
+
+::::: {#recipe-card .portfolio-cards}
+
+::: {.portfolio-header}
 
 ### Recipe Book
 
-::: {#recipe-card .portfolio-cards .d-flex .gap-4 .mycards}
-
-Digital recipe book for personal use.
-</br></br>[VS Code](https://code.visualstudio.com/) was used to create a [Quarto](https://quarto.org/) technical document, which employs markdown and code blocks similar to a [Jupyter](https://jupyter.org/) coding notebook. [Pandoc](https://pandoc.org/) was used to render the markdown-based document into an HTML file. Custom styling occurred using [Sass](https://sass-lang.com/) with CSS and [Bootstrap](https://getbootstrap.com/). The end result is a human-readable source document that is highly adaptable and cabable of displaying complex information.
-</br></br>[<i class="bi bi-globe2"></i> project website](https://goodegg.space/recipe-book/recipe-book.html)
-</br>[<i class="bi bi-github"></i> github repo](https://github.com/crossinguard/recipe-book)
-
-[![](resources\portfolio_recipe-book.png){fig-alt="A screenshot of a digital recipe for mayo."}](https://crossinguard.github.io/recipe-book/)
-</br></br><span class="badge bg-secondary">Quarto</span>
- <span class="badge bg-secondary">Markdown</span>
- <span class="badge bg-secondary">CSS</span>
- <span class="badge bg-secondary">Sass</span>
- <span class="badge bg-secondary">Bootstrap</span>
+- [<i class="bi bi-globe2"></i> project website](https://crossinguard.github.io/recipe-book/)
+- [<i class="bi bi-github"></i> github repo](https://github.com/crossinguard/recipe-book)
 
 :::
+
+::: {.portfolio-badges}
+
+<span class="badge bg-info">process mapping</span>
+<span class="badge bg-success">transfer of knowledge</span>
+<span class="badge bg-secondary">Quarto</span>
+<span class="badge bg-secondary">Markdown</span>
+<span class="badge bg-secondary">CSS</span>
+<span class="badge bg-secondary">Sass</span>
+<span class="badge bg-secondary">Bootstrap</span>
+
+:::
+
+#### About
+
+Digital recipe book for personal use. Original and adapted recipes were rewritten from the ground up to emphasize clarity of instructions and ease of use while cooking. 
+
+#### Tools
+
+A [Quarto](https://quarto.org/) `.qmd` technical document, which employs markdown and functional code blocks similar to a [Jupyter](https://jupyter.org/) coding notebook, was created within [VS Code](https://code.visualstudio.com/). [Pandoc](https://pandoc.org/) was then used to convert the markdown-based `.qmd` document into an HTML file, with custom styling occurring through [Sass](https://sass-lang.com/) with CSS and [Bootstrap](https://getbootstrap.com/). The end result is a human-readable source document that is highly adaptable and cabable of displaying complex information. 
+
+:::::
 
 ::: {#coming-soon}
 Portfolio under construction, more projects coming soon!

@@ -18,7 +18,21 @@ $light-faded: rgba($light, 0.05) !default;
 
 $dark: #222222 !default;
 $darkish: #333333 !default;
-$dark-faded: rgba($dark, 0.05) !default;
+$dark-faded: rgba($dark, 0.8) !default;
+
+// Color: Skills
+$analytics: #dbc19d !default;
+$warning: $analytics !default;
+
+$process-mapping: #c09f71 !default;
+$info: $process-mapping !default;
+
+$transfer-of-knowledge: #a57d45 !default;
+$success: $transfer-of-knowledge !default;
+
+// Color: Portfolio
+$netflix: #e63946 !default;
+$recipe: #b3a9ef !default;
 
 // Font
 $web-font-path: "https://fonts.googleapis.com/css2?family=Fira+Code&family=Fira+Sans:wght@100;400;700&display=swap" !default;
@@ -58,7 +72,7 @@ body {
     color: $secondary;
   }
 
-  li {
+  ul {
     list-style-type: none;
     padding-bottom: 0.5rem;
 
@@ -70,6 +84,14 @@ body {
 
     em {
       font-weight: 100;
+    }
+  }
+
+  ol {
+    font-weight: 100;
+
+    li {
+      padding-bottom: 0.5rem;
     }
   }
 }
@@ -179,14 +201,6 @@ code {
     }
   }
 
-  #roles {
-    p {
-      color: #53616d;
-      font-weight: 400;
-      width: 90%;
-    }
-  }
-
   strong {
     font-family: $font-family-monospace;
     font-size: 3rem;
@@ -201,41 +215,78 @@ code {
 .skills-cards {
   width: 75%;
   margin: auto;
+  margin-bottom: 1rem;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+  background-color: $secondary-faded;
+  border-right: 0.5rem solid $secondary-dark;
+  // border-left: 0.5rem solid $primary-darkest;
+  h3 {
+    font-weight: 700;
+  }
 
-  .level3 {
-    background-color: $secondary-faded;
-    margin-bottom: 1rem;
-    border-radius: 0.5rem;
-    padding: 0.5rem 1rem;
-    border-left: 0.5rem solid $primary-darkest;
-    border-right: 0.5rem solid $secondary-dark;
+  i {
+    font-size: 2.5rem;
+  }
 
-    &:nth-child(even) {
-      background-color: $secondary-darkest;
-    }
+  p {
+    text-align: center;
+  }
 
+  &:hover {
+    transform: scale(1.05);
+    transition: all 0.5s ease-in-out;
+    opacity: 0.8;
+
+    // h3 {
+    //   color: $primary-light;
+    //   transition: all 0.5s ease-in-out;
+    // }
+  }
+}
+
+#analytics-card {
+  border-left: 0.5rem solid $analytics;
+
+  &:hover {
     h3 {
-      font-weight: 700;
-    }
-
-    i {
-      font-size: 2.5rem;
-    }
-
-    p {
-      text-align: center;
-    }
-
-    &:hover {
-      transform: scale(1.05);
+      color: $analytics;
       transition: all 0.5s ease-in-out;
-      opacity: 0.8;
-
-      h3 {
-        color: $primary-light;
-        transition: all 0.5s ease-in-out;
-      }
     }
+  }
+
+  .badge.bg-primary {
+    background: $analytics !important;
+  }
+}
+
+#process-mapping-card {
+  border-left: 0.5rem solid $process-mapping;
+
+  &:hover {
+    h3 {
+      color: $process-mapping;
+      transition: all 0.5s ease-in-out;
+    }
+  }
+
+  .badge.bg-primary {
+    background: $process-mapping !important;
+  }
+}
+
+#transfer-of-knowledge-card {
+  border-left: 0.5rem solid $transfer-of-knowledge;
+
+  &:hover {
+    h3 {
+      color: $transfer-of-knowledge;
+      transition: all 0.5s ease-in-out;
+    }
+  }
+
+  .badge.bg-primary {
+    background: $transfer-of-knowledge !important;
   }
 }
 
@@ -246,6 +297,7 @@ code {
 
   .cv-cards {
     justify-content: center;
+    text-align: center;
 
     p {
       padding: 2rem;
@@ -254,14 +306,48 @@ code {
 }
 
 .portfolio-cards {
-  img:hover {
-    transform: scale(1.05);
-    transition: all 0.5s ease-in-out;
-    opacity: 0.8;
+  margin-bottom: 1rem;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+
+  .portfolio-header {
+    background: $dark-faded;
+    padding: 1rem;
+    margin-top: 0;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
   }
 
-  section {
-    flex: 1;
+  .portfolio-badges {
+    text-align: center;
+  }
+
+  ul {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+
+    li {
+      // text-align: center;
+      padding: 0rem 1rem;
+    }
+  }
+}
+
+#netflix-card {
+  background-color: rgba($color: $netflix, $alpha: 0.05);
+  border-left: 0.5rem solid $netflix;
+
+  .badge.bg-primary {
+    background: $analytics !important;
+  }
+}
+
+#recipe-card {
+  background-color: rgba($color: $recipe, $alpha: 0.05);
+  border-left: 0.5rem solid $recipe;
+  .badge.bg-primary {
+    background: $process-mapping !important;
   }
 }
 
@@ -303,7 +389,38 @@ code {
 
 // Media Queries
 @media (max-width: 768px) {
-  .mycards {
+  .navbar-title {
+    font-size: 1.15rem;
+  }
+
+  #intro {
+    #social {
+      padding-bottom: 0.5rem;
+      font-size: 1.5rem;
+    }
+
+    strong {
+      font-size: 2rem;
+    }
+  }
+
+  .skills-cards {
+    .level3 {
+      h3 {
+        font-size: 1.25rem;
+      }
+
+      i {
+        font-size: 1.5rem;
+      }
+    }
+  }
+
+  .cv-cards {
     flex-direction: column;
+
+    p {
+      padding: 1rem !important;
+    }
   }
 }

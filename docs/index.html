@@ -100,7 +100,7 @@ ul.task-list li input[type="checkbox"] {
 </nav>
     </div>
 <!-- main -->
-<main class="content page-columns page-full" id="quarto-document-content">
+<main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
@@ -152,72 +152,85 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="skills" class="level2">
 <h2 data-anchor-id="skills">skills</h2>
-<div class="skills-cards mycards">
+<div id="analytics-card" class="skills-cards">
 <section id="analytics" class="level3">
 <h3 data-anchor-id="analytics"><i class="bi bi-clipboard-data-fill"></i><br>analytics</h3>
 <p>Compile &amp; generate insights from data to drive business decisions through ad-hoc reports and business intelligence executive dashboards.</p>
+<p><span class="badge bg-warning">analytics</span></p>
 </section>
+</div>
+<div id="process-mapping-card" class="skills-cards">
 <section id="process-mapping" class="level3">
 <h3 data-anchor-id="process-mapping"><i class="bi bi-signpost-2-fill"></i><br>process mapping</h3>
 <p>Define &amp; document processes to increase consistency while improving workflows for atypical pathways.</p>
+<p><span class="badge bg-info">process mapping</span></p>
 </section>
+</div>
+<div id="transfer-of-knowledge-card" class="skills-cards">
 <section id="transfer-of-knowledge" class="level3">
 <h3 data-anchor-id="transfer-of-knowledge"><i class="bi bi-share-fill"></i><br>transfer of knowledge</h3>
 <p>Acquire &amp; convey complex information effectively to stakeholders of diverse technical and knowledge backgrounds.</p>
+<p><span class="badge bg-success">transfer of knowledge</span></p>
 </section>
 </div>
 </section>
-<section id="curriculum-vitae" class="level2 page-columns page-full">
+<section id="curriculum-vitae" class="level2">
 <h2 data-anchor-id="curriculum-vitae">curriculum vitae</h2>
-<div class="page-columns page-full"><p>View my curriculum vitae (i.e., cv, resume) by selecting one of the options below.<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></p><div class="no-row-height column-margin column-container"><li id="fn1"><p><sup>1</sup>&nbsp;<strong>recommend</strong> view online</p></li></div></div>
-<div class="cv-cards d-flex mycards">
+<p>View my curriculum vitae (i.e., cv, resume) by selecting one of the options below.</p>
+<div class="cv-cards d-flex">
 <p><a href="https://crossinguard.github.io/cv/"><span class="btn btn-outline-secondary"><i class="bi bi-filetype-html"></i> view online</span></a></p>
 <p><a href="resources\egbert-resume.pdf"><span class="btn btn-outline-secondary"><i class="bi bi-filetype-pdf"></i> download file</span></a></p>
 </div>
 </section>
 <section id="portfolio" class="level2">
 <h2 data-anchor-id="portfolio">portfolio</h2>
-<section id="netflix-content-analysis" class="level3">
+<div id="netflix-card" class="portfolio-cards">
+<section id="netflix-content-analysis" class="level3 portfolio-header">
 <h3 data-anchor-id="netflix-content-analysis">Netflix Content Analysis</h3>
-<div id="netflix-card" class="portfolio-cards d-flex gap-3 mycards">
-<section id="data-preparation" class="level4">
-<h4 data-anchor-id="data-preparation">Data Preparation</h4>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><a href="https://crossinguard.github.io/netflix-content-analysis/"><img src="resources\portfolio_netflix-content-analysis.png" class="img-fluid figure-img" alt="A screenshot of a data coding notebook."></a></p>
-</figure>
-</div>
-<p><span class="badge bg-secondary">Quarto</span> <span class="badge bg-secondary">R//tidyverse</span> <span class="badge bg-secondary">Markdown</span> <span class="badge bg-secondary">CSS</span> <span class="badge bg-secondary">Sass</span> <span class="badge bg-secondary">Bootstrap</span></p>
-<p><strong>WHAT?</strong></p>
-<p>Preparation of Netflix data for use in a Tableau dashboard. A <code>csv</code> file of data was imported as a dataframe/tibble using <a href="https://www.r-project.org/">R</a> and the <a href="https://www.tidyverse.org/">tidyverse</a> collection of data science packages. Data quality issues regarding columns with multi-value elements, column datatypes, date formats, misplaced values, and column splitting were addressed during this process. The resulting clean data was exported for use in a Tableau dashboard for further analysis.</p>
-<p><strong>HOW?</strong></p>
-<p><a href="https://code.visualstudio.com/">VS Code</a> was used to create a <a href="https://quarto.org/">Quarto</a> technical document, which employs markdown and code blocks similar to a <a href="https://jupyter.org/">Jupyter</a> coding notebook. <a href="https://pandoc.org/">Pandoc</a> was used to render the markdown-based document into an HTML file. Custom styling occurred using <a href="https://sass-lang.com/">Sass</a> with CSS and <a href="https://getbootstrap.com/">Bootstrap</a>. The end result is a human-readable source document that is highly adaptable and cabable of displaying complex information.</p>
 <ul>
 <li><a href="https://crossinguard.github.io/netflix-content-analysis/"><i class="bi bi-globe2"></i> project website</a></li>
 <li><a href="https://github.com/crossinguard/netflix-content-analysis"><i class="bi bi-github"></i> github repo</a></li>
 </ul>
 </section>
-<section id="data-dashboard" class="level4">
-<h4 data-anchor-id="data-dashboard">Data Dashboard</h4>
+<div class="portfolio-badges">
+<p><span class="badge bg-warning">analytics</span> <span class="badge bg-info">process mapping</span> <span class="badge bg-success">transfer of knowledge</span> <span class="badge bg-secondary">Quarto</span> <span class="badge bg-secondary">R//tidyverse</span> <span class="badge bg-secondary">Markdown</span> <span class="badge bg-secondary">CSS</span> <span class="badge bg-secondary">Sass</span> <span class="badge bg-secondary">Bootstrap</span> <span class="badge bg-secondary">Tableau</span> <span class="badge bg-secondary">csv datasource</span></p>
+</div>
 <p><em>Accompanying Tableau dashboard coming soon!</em></p>
-<!-- [![](resources\portfolio_netflix-content-analysis.png){fig-alt="A screenshot of a data coding notebook."}](https://crossinguard.github.io/netflix-content-analysis/) -->
-<p><span class="badge bg-secondary">Tableau</span> <span class="badge bg-secondary">csv datasource</span></p>
-
-<!-- **WHAT?**
-
-[Tableau Public](https://public.tableau.com/) dashboard for exploring and analyzing Netflix data. Multiple clean `csv` files were exported during *Data Preparation* for use as datasources. The following are sample business questions that could be examined using this dashboard.
-
-1. How does the average duration of movies and TV shows on Netflix compare by release year?
-2. Are there certain months when more content is added to Netflix? Does that differ between content types?
-3. How does the distribution of content types differ based on ratings (e.g., PG, PG-13, R)? -->
+<section id="about" class="level4">
+<h4 data-anchor-id="about">About</h4>
+<p>Preparation of Netflix data for use in a Tableau dashboard. Data quality issues regarding columns with multi-value elements, incorrect datatypes &amp; date formats, misplaced values, and column splitting were addressed during this process.</p>
+<p>The resulting clean data was exported to use in a Tableau dashboard for further analysis. The following are sample business questions that could be examined using this dashboard.</p>
+<ol type="1">
+<li><em>How has the average duration of movies and TV shows on Netflix evolved each decade (by release year)?</em></li>
+<li><em>Are there certain months when more content is added to Netflix? Does that differ between content types?</em></li>
+<li><em>What is the distribution of content by ratings (e.g., PG, PG-13, R)? Does that vary by country of origin?</em></li>
+</ol>
+</section>
+<section id="tools" class="level4">
+<h4 data-anchor-id="tools">Tools</h4>
+<p>A <a href="https://quarto.org/">Quarto</a> <code>.qmd</code> technical document, which employs markdown and functional code blocks similar to a <a href="https://jupyter.org/">Jupyter</a> coding notebook, was created within <a href="https://code.visualstudio.com/">VS Code</a>. A <code>csv</code> file of data was imported as a dataframe/tibble using <a href="https://www.r-project.org/">R</a> and the <a href="https://www.tidyverse.org/">tidyverse</a> collection of data science packages.</p>
+<p>At the conclusion of the data preparation process, multiple clean <code>csv</code> files were exported for use as datasources in a <a href="https://public.tableau.com/">Tableau Public</a> dashboard. <a href="https://pandoc.org/">Pandoc</a> was then used to convert the markdown-based <code>.qmd</code> document into an HTML file, with custom styling occurring through <a href="https://sass-lang.com/">Sass</a> with CSS and <a href="https://getbootstrap.com/">Bootstrap</a>. The end result is a human-readable source document that is highly adaptable and cabable of displaying complex information.</p>
 </section>
 </div>
-</section>
-<section id="recipe-book" class="level3">
+<div id="recipe-card" class="portfolio-cards">
+<section id="recipe-book" class="level3 portfolio-header">
 <h3 data-anchor-id="recipe-book">Recipe Book</h3>
-<div id="recipe-card" class="portfolio-cards d-flex gap-4 mycards">
-<p>Digital recipe book for personal use. <br><br><a href="https://code.visualstudio.com/">VS Code</a> was used to create a <a href="https://quarto.org/">Quarto</a> technical document, which employs markdown and code blocks similar to a <a href="https://jupyter.org/">Jupyter</a> coding notebook. <a href="https://pandoc.org/">Pandoc</a> was used to render the markdown-based document into an HTML file. Custom styling occurred using <a href="https://sass-lang.com/">Sass</a> with CSS and <a href="https://getbootstrap.com/">Bootstrap</a>. The end result is a human-readable source document that is highly adaptable and cabable of displaying complex information. <br><br><a href="https://goodegg.space/recipe-book/recipe-book.html"><i class="bi bi-globe2"></i> project website</a> <br><a href="https://github.com/crossinguard/recipe-book"><i class="bi bi-github"></i> github repo</a></p>
-<p><a href="https://crossinguard.github.io/recipe-book/"><img src="resources\portfolio_recipe-book.png" class="img-fluid" alt="A screenshot of a digital recipe for mayo."></a> <br><br><span class="badge bg-secondary">Quarto</span> <span class="badge bg-secondary">Markdown</span> <span class="badge bg-secondary">CSS</span> <span class="badge bg-secondary">Sass</span> <span class="badge bg-secondary">Bootstrap</span></p>
+<ul>
+<li><a href="https://crossinguard.github.io/recipe-book/"><i class="bi bi-globe2"></i> project website</a></li>
+<li><a href="https://github.com/crossinguard/recipe-book"><i class="bi bi-github"></i> github repo</a></li>
+</ul>
+</section>
+<div class="portfolio-badges">
+<p><span class="badge bg-info">process mapping</span> <span class="badge bg-success">transfer of knowledge</span> <span class="badge bg-secondary">Quarto</span> <span class="badge bg-secondary">Markdown</span> <span class="badge bg-secondary">CSS</span> <span class="badge bg-secondary">Sass</span> <span class="badge bg-secondary">Bootstrap</span></p>
+</div>
+<section id="about-1" class="level4">
+<h4 data-anchor-id="about-1">About</h4>
+<p>Digital recipe book for personal use. Original and adapted recipes were rewritten from the ground up to emphasize clarity of instructions and ease of use while cooking.</p>
+</section>
+<section id="tools-1" class="level4">
+<h4 data-anchor-id="tools-1">Tools</h4>
+<p>A <a href="https://quarto.org/">Quarto</a> <code>.qmd</code> technical document, which employs markdown and functional code blocks similar to a <a href="https://jupyter.org/">Jupyter</a> coding notebook, was created within <a href="https://code.visualstudio.com/">VS Code</a>. <a href="https://pandoc.org/">Pandoc</a> was then used to convert the markdown-based <code>.qmd</code> document into an HTML file, with custom styling occurring through <a href="https://sass-lang.com/">Sass</a> with CSS and <a href="https://getbootstrap.com/">Bootstrap</a>. The end result is a human-readable source document that is highly adaptable and cabable of displaying complex information.</p>
+</section>
 </div>
 <div id="coming-soon">
 <p>Portfolio under construction, more projects coming soon!</p>
@@ -225,8 +238,6 @@ ul.task-list li input[type="checkbox"] {
 
 
 </section>
-</section>
-
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
