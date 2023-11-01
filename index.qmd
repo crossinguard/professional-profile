@@ -10,7 +10,7 @@ title: Egbert | professional profile
 
 ::: {#roles}
 
-business analyst, assessment developer, mathematics educator
+data analyst, assessment specialist, mathematics educator
 
 :::
 
