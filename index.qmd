@@ -4,6 +4,8 @@ toc-depth: 2
 title: Egbert | professional profile
 ---
 
+Things are changing around here! Catch a sneak peek at [beta.crossinguard.dev](https://beta.crossinguard.dev/)
+
 ::::: {#intro}
 
 **W. Brett Egbert**
